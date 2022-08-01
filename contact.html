@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>San Mateo Food Truck Park - Contact</title>
+</head>
+<body>
+    <header class="header header-contact">
+        <nav class="navbar" >
+            <a href="index.html" id="logo"><img src="images/logo-ftp.png" alt="Logo"></a>
+            
+            <ul id="navbar">
+                <li class="fa fa-times" onclick="hideMenu()"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="fa fa-bars" onclick="showMenu()" ></div>
+        </nav>
+        <section class="title">
+            <h1>Contact Us</h1>
+        </section>
+    </header>
+    <main>
+        <section class="contact">
+            <address class="address contact-col">
+                <article>
+                    <i class="fa fa-home"></i>
+                    <p><strong>650 Shell Blvd</strong><br>Foster City, CA 94404</p>
+                </article>
+                <article>
+                    <i class="fa fa-phone"></i>
+                    <p><strong>650-333-3333</strong><br>Tuesday to Sunday, 5pm to 10pm</p>
+                </article>
+                <article>
+                    <i class="fa fa-envelope"></i>
+                    <p><strong>foodtruck3@gmail.com</strong><br>Let's Collaborate </p>
+                </article>
+            </address>
+            <!-- post is to submit the form to server behind the sence -->
+            <!-- name parameters will get converted to variables in php, should be unique -->
+            <form action="form-handler.php" method="post" class="form contact-col">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button class="primary-btn form-btn">Send Message</button>
+            </form>
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9036572587374!2d-122.27369271218777!3d37.55733358170467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9ed16884414d%3A0x5412e8778f218cad!2sLeo%20J.%20Ryan%20Park!5e0!3m2!1sen!2sus!4v1658463366271!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4>Share your experience on social media</h4>
+        <address>
+            650 Shell Blvd, Foster City, CA 94404<br>
+            Phone: 650-333-3333
+        </address>
+        <section class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

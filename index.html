@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>San Mateo Food Truck Park</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" >
+            <a href="index.html" id="logo"><img src="images/logo-ftp.png" alt="Logo"></a>
+            
+            <ul id="navbar">
+                <li class="fa fa-times" onclick="hideMenu()"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="fa fa-bars" onclick="showMenu()" ></div>
+        </nav>
+        <section class="title">
+            <h1>San Mateo Food Truck Park</h1>
+            <p>Taste the world with your family and friends!</p>
+            <a href="food.html" class="primary-btn">Our Food Trucks</a>
+        </section>
+    </header>
+    <main class="main">
+        <section class="about row">
+            <aside class="about-col">
+                <img src="images/about.gif" alt="">
+            </aside>
+            <article class="about-col">
+                <h2>About Us</h2>
+                <p>The Food Truck Park brings together creative street cuisine chefs to showcase delicious dishes on a variety of cuisines from China to Mexican to Fusion to Hawaiian and everything in between!<br> Open Tuesday to Sunday, 5pm to 10pm </p>
+            </article>
+        </section>
+        <section class="food col">
+            <article >
+                <h2>Our Community</h2>
+                <p>Welcome to join and enjoy</p>
+            </article>
+            <aside class="food-row">
+                <figure class="food-col">
+                    <img src="images/asianFood.png" alt="">
+                    <figcaption>
+                        Asian Food
+                    </figcaption>
+                </figure>
+                <figure class="food-col">
+                    <img src="images/mexicanFood.jpg" alt="">
+                    <figcaption>
+                        Mexican Food
+                    </figcaption>
+                </figure>
+                <figure class="food-col">
+                    <img src="images/newAmerican.jpg" alt="">
+                    <figcaption>
+                        New American Food
+                    </figcaption>
+                </figure>
+            </aside>
+        </section>
+        <section class="review col">
+            <article>
+                <h2>What our customers say</h2>
+                <p>Below are the most famouse reviews in our website</p>
+            </article>
+            <aside class="review-row">
+                <figure class="review-col">
+                    <img src="images/review1.png" alt="">
+                    <figcaption>
+                        <p>Really nice area to enjoy lunch! I liked that the tables were covered from the sun, the area was clean and there were many different cuisine options to choose from! I highly recommend checking out this place while you're in San Mateo!</p>
+                        <h3>Janny Doe</h3>
+                        <i class="fa fa-star" id="1"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </figcaption>
+                </figure>
+                <figure class="review-col">
+                    <img src="images/review2.png" alt="">
+                    <figcaption>
+                        <p>We ate dinner here three different times... each meal was unique and awesome. It's hard to say which food truck was the best and no selection disappointed. My favorite was Fresh2Go and my wife's Paninis Plus, that said we totally enjoyed the hotdogs, tacos and Mongolian beef</p>
+                        <h3>John Doe</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </figcaption>
+                </figure>
+            </aside>
+        </section>
+        <section class="contact-banner">
+            <h2>Know more about our food truck park</h2>
+            <a href="contact.html" class="primary-btn">Contact Us</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4>Share your experience on social media</h4>
+        <address>
+            650 Shell Blvd, Foster City, CA 94404<br>
+            Phone: 650-333-3333
+        </address>
+        <section class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
